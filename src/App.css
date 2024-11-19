@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 .landing-page {
@@ -27,29 +28,31 @@
 .content {
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 100vh;
   width: 100vw;
- top: 100px;
   backdrop-filter: blur(4px);
   background-color: rgba(0,0,0,0.5);
-  gap: 20px;
+  gap: 100px;
+  padding: 0 40px;
 }
 
 .landing_content {
- margin-top: 430px;
-  margin-left: 100px;
-  transform: translate(-50%, -50%);
+  margin-top: 20px;
   z-index: 1;
   text-align: center;
-  /* background-color: red; */
   width: 400px;
   height: 400px;
+  /* border: #45a049 1px solid; */
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+}
+
+.aboutus_container {
+  margin-top: 20px; /* Adjust as needed */
+  width: 65%; /* Adjust as needed */
 }
 
 .content p,
@@ -131,7 +134,7 @@
 
   .aboutus_container {
     margin-top: 20px; /* Adjust as needed */
-    width: 80%; /* Adjust as needed */
+    width: 40%; /* Adjust as needed */
   }
 }
 

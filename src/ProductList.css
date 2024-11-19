@@ -61,7 +61,8 @@ body {
 
 /* Product Card */
 .product-card {
-    flex: 0 0 calc(33.33% - 20px); /* Adjust width for 3 cards per row with 20px gap */
+    display: flex;
+    flex-direction: column;
     max-width: calc(26.33% - 20px); /* Adjust max-width for 3 cards per row with 20px gap */
     margin-bottom: 20px;
     padding: 20px;
@@ -70,8 +71,7 @@ body {
     border-radius: 5px;
     text-align: center;
     position: relative;
-    
-    gap: 20px;
+    gap: 10px;
 }
 
 /* Pseudo-classes - Hover effect on product button */
@@ -86,10 +86,14 @@ body {
     margin-bottom: 10px;
 }
 
-.product-price {
+.product-cost {
     color: #e74c3c;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.product-description{
+    font-style: italic;
+    color: #5e5e5e;
 }
 
 .product-image {
@@ -106,6 +110,7 @@ body {
     transition: background-color 0.3s ease-in-out;
     margin-top: 10px;
 }
+
 
 .product-button:hover {
     background-color: #c0392b;
@@ -164,6 +169,14 @@ body {
     color: white;
     display: flex;
 }
+
+.cart p{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 5%;
+    right: 2.4%;
+    font-size: 1.4rem;
+}
 .cart_quantity_count{
     margin-top: 16px;
     /* background-color: red; */
@@ -209,6 +222,14 @@ body {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+  }
+
+  .product-button.disable{
+    background-color: #939393
+  }
+
+  .product-button.disable:hover{
+    background-color: #939393
   }
   
   .product-button:hover {
